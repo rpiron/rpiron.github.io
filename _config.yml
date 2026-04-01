@@ -25,14 +25,16 @@ repository               : "rpiron/rpiron.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile_color.jpg"
   name             : "Romain Piron"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral Researcher in Quantum Information."
+  bio              : "Postdoctoral Researcher"
   location         : "Tokyo, Japan"
   employer         : "National Institute of Informatics"
   uri              : # URL
   email            : "piron@nii.ac.jp" 
+
+
 
   # Academic websites
   academia         : # URL
