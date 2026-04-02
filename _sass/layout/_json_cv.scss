@@ -1,239 +1,143 @@
-/* ==========================================================================
-   JSON CV
-   ========================================================================== */
-
-/* CV Template Styles */
+/* Container */
 .cv-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: var(--global-text-color);
-  line-height: 1.6;
 }
 
-/* Header Styles */
-.cv-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid var(--global-thead-color );
-  padding-bottom: 1rem;
-}
-
-.cv-header h1 {
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color );
-}
-
-.cv-contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.cv-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cv-profiles {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.cv-profile-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cv-profile-item a {
-  color: var(--global-link-color);
-  text-decoration: none;
-}
-
-.cv-profile-item a:hover {
-  text-decoration: underline;
-}
-
-/* Section Styles */
+/* Sections */
 .cv-section {
   margin-bottom: 2rem;
 }
 
 .cv-section h2 {
-  border-bottom: 1px solid var(--global-border-color);
-  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Header */
+.cv-header h1 {
+  margin-bottom: 0.2rem;
+}
+
+.cv-header h2 {
+  margin-top: 0;
+  font-weight: normal;
+  color: #666;
+  border: none;
+}
+
+/* Contact */
+.cv-contact {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--global-text-color);
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
-.cv-section h2 i {
-  color: var(--global-text-color);
+.cv-contact-item {
+  font-size: 0.9rem;
+  color: #555;
 }
 
-/* Item Styles */
-
-.cv-item {
-  margin-bottom: 1.5rem;
+/* Profiles */
+.cv-profiles {
+  margin-top: 0.5rem;
 }
 
+.cv-profile-link {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+/* List reset */
 .cv-list {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Items */
+.cv-item {
+  margin-bottom: 1.4rem;
+}
+
+/* 🔥 KEY PART: alignment title / date */
 .cv-item-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  align-items: baseline;
+  gap: 1rem;
 }
 
+/* Title */
 .cv-item-title {
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.05rem;
 }
 
+/* Date (right aligned) */
 .cv-item-date {
-  color: var(--global-text-color);
+  color: #777;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
+/* Subtitle (institution / company) */
 .cv-item-subtitle {
-  color: var(--global-text-color);
-  margin-bottom: 0.5rem;
+  font-style: italic;
+  color: #444;
+  margin-top: 0.2rem;
 }
 
-.cv-item-summary {
-  margin-bottom: 0.5rem;
+/* Details */
+.cv-item-detail {
+  color: #555;
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
 }
 
-.cv-item-highlights {
-  margin-top: 0.5rem;
-  padding-left: 1.5rem;
+/* Bullet points */
+.cv-highlights {
+  margin-top: 0.4rem;
+  padding-left: 1.2rem;
 }
 
-.cv-item-highlights li {
-  margin-bottom: 0.25rem;
+.cv-highlights li {
+  margin-bottom: 0.2rem;
 }
 
-.cv-item-courses li {
-  margin-bottom: 0.25rem;
-}
-
-/* Skills Styles */
+/* Skills */
 .cv-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .cv-skill-category h3 {
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color);
+  margin-bottom: 0.3rem;
 }
 
-.cv-skill-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.cv-skill-list {
+  padding-left: 1rem;
 }
 
-.cv-skill-keyword {
-  background-color: var(--global-bg-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
+/* 🔥 Optional: tighter academic look */
+.cv-item + .cv-item {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
 }
 
-/* Project Styles */
-.cv-project-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.cv-project-keyword {
-  background-color: var(--global-bg-color);
-  color: var(--global-thead-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* Languages Styles */
-.cv-languages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.cv-language {
-  display: flex;
-  flex-direction: column;
-}
-
-.cv-language-name {
-  font-weight: bold;
-}
-
-.cv-language-fluency {
-  color: var(--global-text-color);
-  font-size: 0.9rem;
-}
-
-/* Interests Styles */
-.cv-interests {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.cv-interest h3 {
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color);
-}
-
-.cv-interest-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.cv-interest-keyword {
-  background-color: var(--global-bg-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* References Styles */
-.cv-references {
-  font-style: italic;
-  color: var(--global-text-color);
-}
-
-/* Print Styles */
-@media print {
-  .cv-container {
-    max-width: 100%;
+/* 🔥 Mobile tweak */
+@media (max-width: 600px) {
+  .cv-item-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .cv-header {
-    border-bottom-color: var(--global-border-color);
-  }
-  
-  .cv-section h2 {
-    border-bottom-color: var(--global-border-color);
-  }
-  
-  .cv-skill-keyword,
-  .cv-project-keyword,
-  .cv-interest-keyword {
-    border: 1px solid var(--global-border-color);
-    background-color: transparent;
+
+  .cv-item-date {
+    margin-top: 0.2rem;
   }
 }

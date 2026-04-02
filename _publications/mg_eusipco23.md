@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/mg_eusipco23
 date: 2024-10-23
-excerpt: 'To complete'
+excerpt: ''
 venue: 'Proceedings of the 2024 32nd European Signal Processing Conference (EUSIPCO)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10714952'
 ---

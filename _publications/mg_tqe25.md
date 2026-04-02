@@ -3,7 +3,7 @@ title: "Mixed Grover: A Hybrid Version to Improve Grover's Algorithm for Unstruc
 collection: publications
 category: manuscripts
 permalink: /publication/mg_tqe25
-excerpt: 'To complete'
+excerpt: ''
 date: 2025-03-28
 venue: 'IEEE Transactions on Quantum Engineering (Volume 6)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10944580'

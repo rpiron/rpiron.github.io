@@ -1,152 +1,76 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Romain Piron",
+    "label": "Postdoctoral researcher in quantum information",
+    "email": "",
+    "website": "",
+    "summary": "",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Tokyo",
+      "countryCode": "JP"
     },
-    "profiles": [
-      {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
-      }
-    ]
+    "profiles": []
   },
-  "work": [],
+
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "INSA Lyon, France",
+      "area": "Ph.D in Signal Processing",
+      "endDate": "2025"
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "EPFL, Lausanne, Switzerland",
+      "area": "M.Sc in Theoretical Particle Physics (Double degree)",
+      "endDate": "2023"
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "CentraleSupélec, Gif-sur-Yvette,France",
+      "area": "M.Sc in Engineering",
+      "endDate": "2023"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
+
+  "work": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "position": "Postdoctoral researcher - Quantum system simulations and algorithmic scalability",
+      "company": "National Institute of Informatics, Tokyo, Japan",
+      "startDate": "Oct 2025",
+      "endDate": "Present",
+      "highlights": [
+        "Develops dimensionality reduction for scalable simulation frameworks of high-dimensional quantum interacting models",
+        "Study of benchmarking procedures for quantum operations"
+      ]
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "position": "Ph.D Researcher — Quantum optimization and signal processing",
+      "company": "INSA Lyon, France",
+      "startDate": "Oct 2023",
+      "endDate": "Oct 2025",
+      "highlights": [
+        "Designed and implemented quantum optimization algorithms for data inference in large-scale wireless networks",
+        "Validated approaches through Python simulations and experiments on quantum devices",
+        "Collaborated in an interdisciplinary environment at the intersection of quantum information and signal processing"
+      ]
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "position": "Event Coordinator — Student association (volunteering)",
+      "company": "24h de l'INSA, Lyon, France",
+      "startDate": "Dec 2023",
+      "endDate": "Dec 2024",
+      "highlights": [
+        "Led a team of 10 volunteers during France's largest student-run festival",
+        "Developed coordination, organization, and leadership skills in a fast-paced environment"
+      ]
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "position": "Research Intern — Master's thesis in mathematical physics",
+      "company": "CERN, Switzerland",
+      "startDate": "Feb 2023",
+      "endDate": "Jul 2023",
+      "highlights": [
+        "Investigated consistency conditions in conformal field theory using bootstrap methods",
+        "Explored implications for the AdS/CFT correspondence"
+      ]
     }
   ]
 }

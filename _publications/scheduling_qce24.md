@@ -3,7 +3,7 @@ title: "Scheduling Quantum Annealing for Active User Detection in a NOMA Network
 collection: publications
 category: conferences
 permalink: /publication/scheduling_qce24
-excerpt: 'To complete'
+excerpt: ''
 date: 2025-01-10
 venue: 'Proceedings of the 2024 IEEE International Conference on Quantum Computing and Engineering (QCE)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10821335'

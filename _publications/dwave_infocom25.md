@@ -3,7 +3,7 @@ title: "Simplified Embedding Scheme for Quantum Annealing Applied to Activity De
 collection: publications
 category: conferences
 permalink: /publication/dwave_infocom25
-excerpt: 'To complete'
+excerpt: ''
 date: 2025-09-12
 venue: 'Proceedings of the 2025 IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10943100'

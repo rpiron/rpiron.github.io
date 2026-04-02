@@ -3,7 +3,7 @@ title: "Quantum Annealing for Active User Detection in NOMA Systems"
 collection: publications
 category: conferences
 permalink: /publication/qa_asilomar24
-excerpt: 'To complete'
+excerpt: ''
 date: 2025-04-04
 venue: 'Proceedings of the 2024 58th Asilomar Conference on Signals, Systems, and Computers'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10943100'
