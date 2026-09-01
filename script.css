@@ -387,6 +387,26 @@ ul {
   margin-bottom: 0;
 }
 
+.award-note {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin: 1.4rem 0 0;
+  padding: 0.8rem 0.95rem;
+  color: #32373b;
+  background: var(--soft);
+  border-left: 3px solid var(--base);
+  border-radius: 4px;
+}
+
+.award-label {
+  flex: 0 0 auto;
+  color: var(--base);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
 .breadcrumb-link {
   margin-bottom: 0.8rem;
   font-size: 0.92rem;

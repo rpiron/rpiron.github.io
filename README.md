@@ -36,6 +36,8 @@ document.write('<script src="content/publications/preprints/my-paper.js"></scrip
 
 For publications, use `note` for the short sentence shown in the publication list, and `abstract` for the full paper abstract shown on the detail page.
 
+Optionally, add `award: "Award name"` to a publication file to show an award note above the abstract on the detail page.
+
 For talks, keep the list concise and use `summary` only for the detail page.
 
 The HTML files intentionally stay very small and only load the shared CSS, the relevant content loaders, and JavaScript.

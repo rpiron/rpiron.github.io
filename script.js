@@ -267,6 +267,17 @@
     return `<p class="entry-authors">${authors.map((author) => escapeHtml(author)).join(", ")}</p>`;
   }
 
+  function renderAward(award) {
+    if (!award) return "";
+
+    return `
+      <aside class="award-note" aria-label="Publication award">
+        <span class="award-label">Award</span>
+        <span>${escapeHtml(award)}</span>
+      </aside>
+    `;
+  }
+
   function renderPublicationFilters() {
     const categories = ["Preprints", "Journal Articles", "Proceedings"];
     const buttons = categories.map((category) => `
@@ -341,6 +352,7 @@
         <p class="entry-actions">
           ${link("Paper", item.url, "button-link")}
         </p>
+        ${renderAward(item.award)}
         <section class="content-section">
           <h2>Abstract</h2>
           <p>${escapeHtml(item.abstract || item.note)}</p>
