@@ -7,7 +7,6 @@
   --link: #327f96;
   --link-hover: #235d6d;
   --soft: #f8fafb;
-  --masthead-height: 70px;
 }
 
 * {
@@ -20,11 +19,11 @@ html {
 
 body {
   margin: 0;
-  padding-top: var(--masthead-height);
   color: var(--text);
   background: var(--bg);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.55;
+  overflow-x: hidden;
 }
 
 a {
@@ -42,6 +41,7 @@ h2,
 h3 {
   color: #32373b;
   line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -89,6 +89,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  min-width: 0;
 }
 
 .filter-chip,
@@ -146,6 +147,7 @@ h3 {
 
 p {
   margin: 0 0 1.15rem;
+  overflow-wrap: anywhere;
 }
 
 ul {
@@ -153,7 +155,7 @@ ul {
 }
 
 .masthead {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 20;
   width: 100%;
@@ -166,9 +168,8 @@ ul {
   align-items: center;
   gap: 1.5rem;
   max-width: 1280px;
-  min-height: var(--masthead-height);
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .site-title,
@@ -222,7 +223,7 @@ ul {
 
 .author {
   position: sticky;
-  top: calc(var(--masthead-height) + 2rem);
+  top: 2rem;
 }
 
 .author-avatar {
@@ -350,6 +351,7 @@ ul {
 .entry {
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--border);
+  min-width: 0;
 }
 
 .entry:last-child {
@@ -463,6 +465,7 @@ ul {
   padding: 2rem 1rem;
   color: var(--muted);
   font-size: 0.85rem;
+  overflow-wrap: anywhere;
 }
 
 @keyframes intro {
@@ -477,14 +480,10 @@ ul {
 }
 
 @media (max-width: 900px) {
-  :root {
-    --masthead-height: 88px;
-  }
-
   .masthead-inner {
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 0.35rem;
   }
 
   .site-title {
@@ -492,13 +491,15 @@ ul {
   }
 
   .nav-list {
-    gap: 0.75rem;
+    gap: 0.35rem 0.85rem;
   }
 
   #main {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 1.5rem;
+    max-width: 760px;
+    padding-inline: 1.25rem;
   }
 
   .author {
@@ -535,32 +536,77 @@ ul {
 }
 
 @media (max-width: 560px) {
-  :root {
-    --masthead-height: 116px;
-  }
-
   body {
     line-height: 1.5;
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.45rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .masthead-inner {
-    min-height: var(--masthead-height);
+    padding: 0.65rem 0.9rem;
   }
 
   .nav-list {
-    gap: 0.35rem 0.75rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0.8rem;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+    scrollbar-width: none;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
   }
 
   .site-title,
   .nav-link {
     font-size: 0.9rem;
+  }
+
+  #main {
+    margin-top: 1rem;
+    padding-inline: 1rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .author {
+    grid-template-columns: 64px minmax(0, 1fr);
+    column-gap: 0.8rem;
+  }
+
+  .author-avatar {
+    width: 64px;
+  }
+
+  .filter-panel {
+    display: block;
+  }
+
+  .filter-label {
+    display: block;
+    padding-top: 0;
+    margin-bottom: 0.55rem;
+  }
+
+  .filter-chip,
+  .filter-clear {
+    min-height: 1.85rem;
+    font-size: 0.82rem;
+  }
+
+  .entry-meta,
+  .entry-authors {
+    font-size: 0.88rem;
+  }
+
+  .button-link {
+    padding: 0.5rem 0.7rem;
   }
 }

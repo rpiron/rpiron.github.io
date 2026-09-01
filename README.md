@@ -13,7 +13,7 @@ The visual structure is inspired by [AcademicPages](https://github.com/academicp
 - `talk.html`: internal talk detail page
 - `cv.html`: CV page
 - `blog.html`: research notes list
-- `asset/`: image, favicon, PDF assets, and local PNG icons
+- `asset/`: image, SVG favicon, PDF assets, and local PNG icons
 - `script.css`: visual style
 - `script.js`: shared rendering logic
 - `content/publications/`: one JavaScript data file per publication, sorted by category
@@ -22,13 +22,13 @@ The visual structure is inspired by [AcademicPages](https://github.com/academicp
 
 ## Adding an item
 
-Add one data file in the appropriate category folder, then add it to that category's `_items.js` loader.
+Add one data file in the appropriate category folder, then add it to that category's `items.js` loader.
 
 For example, a new preprint can live in:
 
 `content/publications/preprints/my-paper.js`
 
-Then add this line to `content/publications/preprints/_items.js`:
+Then add this line to `content/publications/preprints/items.js`:
 
 ```js
 document.write('<script src="content/publications/preprints/my-paper.js"></script>');

@@ -433,7 +433,7 @@
         <h1>CV</h1>
         <p>${link("Download my full CV (PDF)", data.cv.pdf, "button-link")}</p>
         <section class="content-section">
-          <h2>Experience</h2>
+          <h2>Research experience</h2>
           <div class="entry-list">${renderCvList(data.cv.work, "asset/icons/work.png")}</div>
         </section>
         <section class="content-section">
