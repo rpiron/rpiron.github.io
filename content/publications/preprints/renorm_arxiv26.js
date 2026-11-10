@@ -1,12 +1,12 @@
 window.SITE_CONTENT = window.SITE_CONTENT || { publications: [], talks: [], posts: [] };
 window.SITE_CONTENT.publications.push({
-  title: "Renormalization Treatment of IR and UV Cutoffs in Waveguide QED and Implications to Numerical Model Simulation",
+  title: "Bandwidth-Cost Reduction for Photon-Matter Simulation at the Single-Photon Level",
   slug: "renorm_arxiv26",
   category: "Preprints",
   date: "2026-01-22",
   venue: "arXiv:2601.15945 [quant-ph]",
   authors: ["Romain Piron", "Akihito Soeda"],
   url: "https://arxiv.org/abs/2601.15945",
-  note: "A renormalization treatment for waveguide-QED simulations with explicit IR and UV cutoffs.",
-  abstract: "We present a non-perturbative, first-principles derivation of renormalization relations for waveguide-QED models, explicitly accounting for the infrared (IR) and ultraviolet (UV) cutoffs that are necessarily introduced in numerical simulations. By formulating the atomic dynamics in the time domain, we obtain explicit expressions linking the bare model parameters to the physically observable atomic frequency and decay rate, and verify their consistency with scattering theory. We further connect these results to standard Feynman diagrams, providing a transparent physical interpretation and ensuring the generality of the approach. Finally, we show how these renormalization relations can be used to parameterize simulations with a minimal frequency bandwidth, simultaneously preserving physical accuracy and reducing computational cost, thereby paving the way for efficient and reliable multi-photon light-matter simulations."
+  note: "A renormalization treatment for light-matter Hamiltonian simulations with explicit IR and UV cutoffs.",
+  abstract: "Simulations of quantum dynamics of traveling photons interacting with matter can be used to model and design photonic quantum-network components. Such simulations require selecting a finite set of photonic modes, where smaller sets are more desirable for computational efficiency. In this work, however, we show that opting for smaller subsets alters simulation results, if done naively. We therefore provide a consistency condition that can be used to calibrate the simulation input parameters to increase efficiency while preserving accuracy, simultaneously. This condition is then used to derive a simple prescription that reduces the propagation cost by two order of magnitude in a waveguide benchmark. Finally, we extend the same calibration principle to a two-dimensional atomic array, demonstrating the simultaneous benefits beyond analytically solvable waveguide models."
 });

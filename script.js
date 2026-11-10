@@ -43,14 +43,17 @@
       sections: [
         {
           title: "Current research interests",
+          text: [
+            "In a networked quantum computer, quantum information is exchanged between distant nodes through photons propagating along waveguides, such as optical fibers, and interacting with optical devices. Detailed physical modeling of photon propagation and interactions allows us to identify, quantify, and ultimately compensate for errors accumulated during transmission and processing. My current research explores two complementary directions toward this goal:"
+          ],
           items: [
             {
               title: "Numerical simulation of quantum platforms",
-              text: "I develop analytical techniques to enable scalable numerical simulations of light-matter Hamiltonians, with particular emphasis on waveguide QED platforms."
+              text: "Developing scalable numerical methods for simulating quantum optical systems, including light-matter Hamiltonians and linear optical networks, to predict device behavior and quantify error accumulation in photonic states."
             },
             {
-              title: "Quantum benchmarking and certification",
-              text: "I work on scalable protocols for the certification of quantum operations, with a particular focus on randomized benchmarking approaches for distributed gates."
+              title: "Parameter estimation",
+              text: "Investigating inference methods for real-time estimation of network parameters from operational statistics, enabling continuous recalibration and error mitigation."
             }
           ]
         },
@@ -211,11 +214,13 @@
   function renderHome() {
     const intro = [
       `I am a postdoctoral researcher at the ${link("Global Research Center for Quantum Information Science", "https://quantum.nii.ac.jp", "inline-link")}, hosted in the ${link("National Institute of Informatics", "https://www.nii.ac.jp/en/", "inline-link")}, Tokyo, Japan.`,
-      escapeHtml("My work lies at the interface of quantum information and analytical description of interacting quantum systems, with a focus on scalable methods for quantum technologies.")
+      escapeHtml("I am working on the simulation of quantum network operations (e.g., entanglement generation protocols), with a particular emphasis on physical-level modeling of interactions between photons and optical components. The long-term goal is to identify, quantify, and track errors arising from these interactions, ultimately contributing to the development of fault-tolerant distributed quantum computing.")
     ].map((paragraph) => `<p>${paragraph}</p>`).join("");
 
     const sections = data.home.sections.map((section) => {
-      const text = section.text ? `<p>${escapeHtml(section.text)}</p>` : "";
+      const paragraphs = Array.isArray(section.text) ? section.text : [section.text];
+      const text = paragraphs.filter(Boolean)
+        .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("");
       const items = section.items.map((item) => `
         <li>
           <strong>${escapeHtml(item.title)}</strong>
